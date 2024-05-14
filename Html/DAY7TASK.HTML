@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset style="text-align: center; border-color: darkmagenta">
+        <h2 style="text-align: center; color: blueviolet"><u>Sign-up</u></h2>
+        <label for="Fname">Username Name:</label>
+        <input name="Fname" type="text" id="Fname" /><br /><br />
+        <label for="Email">Email Id:</label>
+        <input type="text" id="Email" name="Email" /><br /><br />
+        <label for="num">Mobile Number:</label>
+        <input type="number" id="tel" name="mob" pattern="(?=.*[0-9]).{10}" />
+        <br /><br />
+        <label for="password">Enter Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+        />
+        <br /><br />
+        <label for="password">Re-Enter Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+        />
+        <br /><br />
+
+        <input type="submit" formaction="./Format5.Html" />
+        <a href="./Format5.Html">Already have account:</a>
+      </fieldset>
+    </form>
+  </body>
+</html>
